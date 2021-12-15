@@ -1,0 +1,6 @@
+courses = {
+"Complete NodeJS course with express, socket io and MongoDB":"https://www.udemy.com/share/103Q3Y3@mXaerUuxKd8zuIZMboP4-fDzBmNbSEQC7hqIiXNgyB-nMXY42GN5FGzS81J8PNgGrg==/",
+"JavaScript: Desde cero con NodeJS":"https://www.udemy.com/share/105kgG3@5fafiTNd2OUmY2J4NLEwPvE7mJ5kzg6NIk88wnojmMVxgsHEueGxPmu80SKdumqjxQ==/",
+"The Complete Node.JS | Express with NodeJS For Beginners":"https://www.udemy.com/share/104BUC3@dKrkVmZ6uznS12l61udYS544g5cXdc5vT1Ks2di386i_p0KF9yH8K4S9W2fIJS7C8A==/"
+}
+
