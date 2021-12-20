@@ -4,7 +4,7 @@
 // https://nodejs.dev/learn/the-nodejs-event-emitter
 // https://nodejs.org/api/events.html
 
-const events = require("events"); // its module of nodejs
+const events = require("events"); // its module of nodejs no mine
 
 /**
  * it's like jquery
