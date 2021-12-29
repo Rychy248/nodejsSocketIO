@@ -5,8 +5,10 @@ function dir(filedir){
 
 function main() {
     const express = require("express");
+    const bodyParser = require("body-parser");
 
     const app = express();
+    var urlencodedParser = bodyParser.urlencoded({ extended: false });
 
     app.set("view engine","ejs");
     // Middleware
@@ -24,9 +26,17 @@ function main() {
     app.get("/reviews",(req, res)=>{
         res.render("reviews");
     });
-    app.get("/about",(req, res)=>{
-        res.render("about");
+    app.get("/about/GET",(req, res)=>{
+            res.render("aboutGET",{qs:req.query});
     });
+    app.get("/about/POST",urlencodedParser, (req,res)=>{
+        res.render("aboutPOST",{ps:req.body});
+    });
+
+    app.post("/about/POST",urlencodedParser, (req,res)=>{
+        res.render("aboutPOST",{ps:req.body});
+    });
+
     app.get("/profile/:id",(req, res)=>{
         const data = {
             name:"rychy",

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title-set">Todo</title>
+    <link rel="stylesheet" href="./../assets/styles.css">
+</head>
+<body>
+    <script 
+    src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+    crossorigin="anonymous">
+    </script>
+    <section>
+        <h1>T O D O!</h1>
+    </section>
+    <section>
+        <div>
+            <!-- <form action="/todo" method="POST"> -->
+            <form>
+                <input type="text" name="item" placeholder="Add new todo" required />
+                <button type="submit">Add</button>
+            </form>
+        </div>
+        <% if(todo.length > 0){%>
+            <ul>
+                <% for(let i=0;i < todo.length; i++){%>
+                    <li><%= todo[i].item %></li>
+                <%}; %>
+            </ul>
+        <% }; %>
+    </section>
+</body>
+</html>

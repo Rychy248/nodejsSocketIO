@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="./../assets/css/style.css">
+</head>
+<body>
+    <header>
+        <%- include("./components/header.ejs") %>
+        <h1>About</h1>
+    </header>
+    <section>
+        <h1>METHOD GET</h1>
+        <h2>Person <%= qs.who %></h2>
+        <h2>Job: <%= qs.job %></h2>
+    </section>
+    <section>
+        <form action="/about/GET" method="GET">
+            <label for="who">Name</label>
+            <input type="text" name="who" id="who" value="<%= qs.who %>">
+            <label for="job">Job</label>
+            <input type="text" name="job" id="job" value="<%= qs.job %>">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" value="<%= qs.email %>">
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+</html>

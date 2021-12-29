@@ -1,0 +1,59 @@
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, 
+    rgba(2,0,36,0.5074229520909926) 0%, 
+    rgba(9,85,121,0.6082632882254464) 29%, 
+    rgba(22,52,151,0.5298319156764268) 70%, 
+    rgba(57,172,237,0.6418767336035978) 91%
+    );
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+input[type="text"]{
+    width: 300px;
+    padding: 16px;
+    font-size: 21px;
+}
+
+form {
+    text-align: center;
+}
+
+button{
+    padding: 16px;
+    background: green;
+    color: #fff;
+    cursor: pointer;
+    font-size: 21px;
+}
+
+ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+li{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+li:hover{
+    text-decoration:line-through;
+    background: rgb(10, 10, 10);
+    color: azure;
+}
+
+h1{
+    text-align: center;
+    color: rgba(6, 5, 82, 0.555);
+};
+.NotFound{
+    text-align: center;
+    font-size: 100%;
+    
+};
+
